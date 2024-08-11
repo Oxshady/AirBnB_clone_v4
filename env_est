@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+dir="./web_dynamic"
+if [ ! -d $dir ]; then
+	mkdir $dir
+fi
+mkdir $dir/templates
+cp -r web_flask/static $dir/
+cp web_flask/templates/100-hbnb.html $dir/templates/0-hbnb.html
+cp web_flask/100-hbnb.py $dir/0-hbnb.py
+cp web_flask/__init__.py $dir/
